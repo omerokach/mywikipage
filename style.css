@@ -1,0 +1,37 @@
+/* style main page */
+#mainbody{
+    background-image: url(hikingbackground.jpg);
+    background-size: 100%;
+    z-index: -1;
+}
+.wellcomesec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: lightskyblue;
+    opacity: 80%; 
+    border: solid black; 
+    border-radius: 1rem;
+
+}
+
+.titlebox{
+    border: solid black;
+    border-radius: 1rem;
+    text-align: center;
+
+}
+
+.summerybox{
+    font-family: sans-serif;
+    font-size: 30 px;
+    padding: 1em;
+    margin-top: 1em;
+    border: solid black;
+    border-radius: 1rem;
+    flex-basis: 50%;
+ 
+}
