@@ -162,7 +162,7 @@ li.infoseclinks{
     border: solid black 1px;
     border-radius: 2em;
     padding: 2em;
-    margin: 1px;
+    margin: 10px;
 }
 
 #imgtrail{width:318px; height: 159px;}
@@ -183,3 +183,12 @@ li.infoseclinks{
     width: 100vw;
     height: 100vh;
 }
+
+/*northpage*/
+    #northpage{
+        background: rgb(73,204,65);
+        background: linear-gradient(0deg, rgba(73,204,65,0) 0%, rgba(146,226,141,1) 0%, rgba(241,254,241,1) 47%, rgba(190,239,188,1) 63%, rgba(190,239,188,1) 94%);
+        width: 100vw;
+        height: 100vh;
+    }
+    
