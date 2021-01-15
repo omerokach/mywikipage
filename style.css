@@ -1,8 +1,15 @@
 /* style main page */
 html {
+    overflow-x: hidden ;
     scroll-behavior: smooth;
+    max-width: 100vw;
   }
   
+  :root{
+      --wellcomesecwidht:100vw;
+      --wellcomesecheight:100vh;  
+      --southpagebackground:rgb(34,193,195);
+  }
 a[href]{
     padding: 0.5em;
     text-decoration: none;
@@ -19,12 +26,14 @@ a[href]{
 }
 
 .navbar{
+    left: 0;
+    top: 0;
     z-index: 1;
     position: fixed;
     display: flex;
     flex-direction: row;
     background-color: hsl(0, 0%, 83%, 0.70);
-    width: 100%;
+    width: 100vw;
 }
 
 .navcons{
@@ -37,8 +46,8 @@ a[href]{
     flex-direction: column;
     justify-content: center ;
     align-items: center;
-    width: 100%;
-    height: 100vh;
+    width: var(--wellcomesecwidht);
+    height: var(--wellcomesecheight);
     background-color: lightskyblue;
     opacity: 80%; 
     border: solid black; 
@@ -79,7 +88,7 @@ a[href]{
     text-align: center;
     border: solid #ccc 1px;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 3rem;
     background-color: rgb(255, 166, 0, 0.5);
     flex-basis: 33%;
 }
@@ -88,7 +97,7 @@ a[href]{
     text-align: center;
     border: solid #ccc 1px;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 3rem;
     background-color: hsl(240, 100%, 50%, 0.5);
     flex-basis: 33%;
 }
@@ -102,10 +111,25 @@ a[href]{
     flex-basis: 33%;
 }
 
+.contactme{
+    display: flex;
+    background-color: whitesmoke;
+    align-items : center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 3rem;
+
+}
+.contacttitle{
+    align-content : center;
+}
+.contactlink{
+    align-content : center;
+}
 /* south page */
 
 #southpage{
-    background: rgb(34,193,195);
+    background: var(--southpagebackground);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 25%);    
     width: 100vw;
     height: 100vh;
@@ -115,8 +139,8 @@ a[href]{
     flex-direction: column;
     text-align: center;
     justify-content: space-around;
-    width: 100%;
-    height: 100vh;
+    width: var(--wellcomesecwidht);
+    height: var(--wellcomesecheight);
     font-size: 40px;
 }
 
@@ -124,8 +148,9 @@ a[href]{
     display: flex;
     justify-content: space-around;
     border: sienna solid 1px;
-    padding: vpw;
-    width: 100%;
+    padding: 2px;
+    left: 0;
+    width: 100vw;
     border-radius: 1rem;
 }
 
@@ -148,6 +173,8 @@ li.infoseclinks{
 .section{
     width: 100vw;
     height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .seclinks{
@@ -164,8 +191,21 @@ li.infoseclinks{
     padding: 2em;
     margin: 10px;
 }
+.imgcontainer{
+max-height: 40vh;
+  flex-grow: 1;
+  padding: 5px;
+}
 
-#imgtrail{width:318px; height: 159px;}
+#imgtrail{
+    display:flex;
+    width:318px; 
+    height: 159px; 
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    }
 
 .tipbox{
     display: flex;
