@@ -20,7 +20,7 @@ a[href]{
   }
 
 #mainbody{
-    background-image: url(hikingbackground.jpg);
+    background-image: url(imgs/hikingbackground.jpg);
     background-size: 100%;
     z-index: -1;
 }
