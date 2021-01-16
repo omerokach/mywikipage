@@ -210,13 +210,23 @@ max-height: 40vh;
     min-width: 100%;
     min-height: 100%;
     }
+    #tips{
+        display: flex;
+
+    }
+    #tipquotes{
+        align-self: center;
+    }
 
 .tipbox{
+    width: 1000px;
+    height: 500px;
     display: flex;
     border: black solid 1px;
     border-radius: 10em;
     justify-content: center;
-    padding: 2em;
+    align-items: center;
+    padding: 0.5em;
 }
     
 /* centerpage */
